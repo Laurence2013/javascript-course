@@ -26,7 +26,9 @@ PersonAge.prototype.license = function(licenseType){
 	return `${this.name} is a ${licenseType} for Deliveroo`; 
 }
 PersonAge.prototype.car = function(model, pistons){
-	console.log(this + ` my car is ${model}`);
+	console.log(this + ' my car is ' + model);
+
+	model(pistons);
 }
 
 let person = new Person('Laurence');
