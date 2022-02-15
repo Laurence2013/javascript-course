@@ -33,5 +33,5 @@ minion.eats = function(food){
 }
 
 giantScorpion.eats({name: 'hamburger', hp: 10, toString(){return this.name}});
-smallScorpion.eats({name: 'ice cream', hp: 11, toString(){return this.name}});
+smallScorpion.eats({name: 'ice cream', hp: 1, toString(){return this.name}});
 giantSpider.eats({name: 'hamburger', hp: 100, toString(){return this.name}});
