@@ -15,3 +15,4 @@ let walkingMinion = new WalkingMinion();
 
 walkingMinion.walksTo(2,2);
 walkingMinion.walksTo(3,3);
+walkingMinion.walksTo(4,4);

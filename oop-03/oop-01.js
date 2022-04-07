@@ -13,16 +13,21 @@ Wizard.prototype.constructor = Wizard;
 
 Wizard.prototype.castSpells = function(spell, target){
 	console.log(this + ' casts ' + spell + ' on ' + target);
+	//console.log(this + ' casts ' + spell + ' on ' + target + ' also: ' + spell.mana);
 
 	this.mana -= spell.mana;
 	spell(target);
 }
-/*Wizard.prototype.toString = function(){
-	return Minion.prototype.toString.apply(this, arguments) + ',the ' + this.element + ' Wizard';
-}*/
+
+// Overriding or extending existing ...prototype.toString() in Minion Object
 Wizard.prototype.toString = function(){
-	return this.name + ', the ' + this.element + ' Wizard';
+	return Minion.prototype.toString.apply(this, arguments) + ',the ' + this.element + ' Wizard1';
 }
+
+// Using existing ...prototype.toString() in Wizard Object
+/*Wizard.prototype.toString = function(){
+	return this.name + ', the ' + this.element + ' Wizard2';
+}*/
 Minion.prototype.toString = function(){
 	return this.name;
 }
